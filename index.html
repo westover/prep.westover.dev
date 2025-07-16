@@ -2,9 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Untitled Page</title>
+  <title>Meta Interview Prep – James Westover</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    h1, h2, h3 {
+      color: #2d2d2d;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
+  <h1>Meta Interview Prep – James Westover</h1>
+
+  <h2>👋 Quick Introduction</h2>
+  <p>I'm James Westover, a systems architect and Python expert with 15+ years of experience spanning backend systems, data pipelines, geospatial infrastructure, and autonomous vehicle platforms. I’ve led major platform efforts at Uber, Postmates, HERE, and now serve as CTO at a consulting firm. I'm especially interested in impactful backend systems that bridge physical data and cloud infrastructure.</p>
+
+  <h2>🧠 Interview Focus Areas & Resume Alignment</h2>
+  <ul>
+    <li><strong>Scale & Scope:</strong> Uber Location Platform (2–10M QPS), Navigation backend (10k+ nodes), Postmates CI reduction</li>
+    <li><strong>Technical Expertise:</strong> Python, Go, ROS, Kafka, Cassandra, AWS/GCP/Azure, sensor fusion, edge-to-cloud</li>
+    <li><strong>Cross-Functional Collaboration:</strong> Cross-org projects at Uber/HERE, team scaling, client-facing roles at Neher</li>
+  </ul>
+
+  <h2>🌍 Project 1: Uber Location Platform</h2>
+  <p><strong>S:</strong> Uber needed real-time location ingestion to drive safety and fraud features.<br>
+     <strong>T:</strong> Build and scale ingestion infrastructure, ensuring GDPR compliance.<br>
+     <strong>A:</strong> Led cross-org teams, built ingestion via Cassandra/Kafka, deployed multipath-aware correction (ShadowMaps).<br>
+     <strong>R:</strong> 80% → 97% success rate, enabled RideCheck, saved $30M+ in fraud.</p>
+
+  <h2>🚀 Project 2: Python Platform at Uber</h2>
+  <p><strong>S:</strong> Uber had widespread technical debt with legacy Python 2 services.<br>
+     <strong>T:</strong> Drive company-wide Python 2→3 migration.<br>
+     <strong>A:</strong> Built dependency graph, targeted 90%+ of services, mentored teams.<br>
+     <strong>R:</strong> Full migration completed pre-EOL, improved developer velocity and stability.</p>
+
+  <h2>📈 Project 3: NJ Transit Vision POC (Neher)</h2>
+  <p><strong>S:</strong> NJ Transit sought a real-time behavioral monitoring system.<br>
+     <strong>T:</strong> Architect POC system with AWS + client dashboard.<br>
+     <strong>A:</strong> Built ECS-based pipeline with Rekognition + SageMaker, mobile viewer, led delivery.<br>
+     <strong>R:</strong> Delivered demo in under 6 weeks, opened new partnership opportunity.</p>
+
+  <h2>🛠 Optional Project: HERE FleetVision + Map Pipelines</h2>
+  <p>Real-time ingest and analytics platform for autonomous fleet data (Kafka, Storm, Elasticsearch). Led dev for orchestration system (“Weatherman”), sensor fusion, and embedded integrations with partners (Intel, Nvidia, Mercedes).</p>
+
+  <h2>💬 Sample STAR Interview Questions & Answers</h2>
+
+  <h3>1. Tell me about a time you leveraged cross-functional partnerships to solve a business challenge.</h3>
+  <p><strong>Uber Location Platform:</strong> Coordinated across legal, privacy, and infra teams to build GDPR-compliant location pipelines. Balanced performance needs with privacy constraints. Resulted in successful global launch and key features like RideCheck.</p>
+
+  <h3>2. Tell me about a time when your team had a conflict or disagreement with another team.</h3>
+  <p><strong>Uber Navigation:</strong> Disagreement with ML team on off-route heuristics. Built Python simulator to test competing approaches, leading to consensus around revised parameters. Simulation capacity scaled 20x during this project.</p>
+
+  <h3>3. Walk me through a project that required collaboration across functions.</h3>
+  <p><strong>Postmates Integration:</strong> Managed customer identity compliance flows during Uber acquisition. Worked with infra, legal, and ops. Ensured continuity and compliance in Go-based services and legacy systems.</p>
+
+  <h2>❓ Questions to Ask Interviewer</h2>
+  <ul>
+    <li>How are scope and impact defined for L7 IC roles at Meta?</li>
+    <li>What’s the engineering culture around experimentation vs. platform stability?</li>
+    <li>How are initiatives aligned across orgs (infra, product, AI, etc.)?</li>
+    <li>How are technical leaders involved in hiring and mentoring?</li>
+    <li>What do you personally enjoy most about working at Meta?</li>
+  </ul>
+
+</p>
+
+  <h2>🧱 Additional Projects & Contributions</h2>
+
+  <h3>Uber Navigation Engine Enhancements</h3>
+  <p><strong>S:</strong> Urban off-route detection lagged behind expectations.<br>
+     <strong>T:</strong> Improve responsiveness in dense cities.<br>
+     <strong>A:</strong> Introduced cross-street heuristics and route object enhancements, boosting detection speed.<br>
+     <strong>R:</strong> Reduced off-route detection time from minutes to seconds, improved rider and driver UX in metro regions.</p>
+
+  <h3>Postmates Python 3 Migration</h3>
+  <p><strong>S:</strong> Legacy Python 2 monorepo impacted security and CI/CD.<br>
+     <strong>T:</strong> Lead migration to Python 3.<br>
+     <strong>A:</strong> Orchestrated K8s test parallelism, reduced CI from 50 to 15 mins.<br>
+     <strong>R:</strong> Enabled safe modernization of codebase, improved build throughput and release confidence.</p>
+
+  <h3>HERE FleetVision 2</h3>
+  <p><strong>S:</strong> Need for real-time fleet monitoring and debugging for autonomous programs.<br>
+     <strong>T:</strong> Build an integrated driver/engineer-facing stack.<br>
+     <strong>A:</strong> Delivered Tornado + React app with real-time GPS/camera/IMU data, OTA pipeline, CI/CD automation.<br>
+     <strong>R:</strong> Enabled day-to-day fleet ops and downstream QA initiatives.</p>
+
+  <h2>📚 More Sample STAR Prompts & Answer Concepts</h2>
+
+  <h3>4. Describe a time when you made a technical decision that wasn’t initially popular.</h3>
+  <p><strong>Uber Python Platform:</strong> Chose to fully deprecate legacy Tornado-based RPC (TChannel) despite resistance. Provided wrapper APIs and support docs to minimize disruption. Eventually gained adoption across most teams.</p>
+
+  <h3>5. How do you handle conflicting priorities from multiple stakeholders?</h3>
+  <p><strong>HERE Capture Stack:</strong> Managed embedded and cloud priorities with Intel and Audi. Established lightweight OKRs per track, delegated decision-making to embedded team leads, aligned priorities via biweekly syncs.</p>
+
+  <h3>6. Tell me about a time you had to learn something quickly to make progress.</h3>
+  <p><strong>Postmates Observability:</strong> Needed to debug unfamiliar Go-based identity system and implement tracing via OpenTelemetry. Self-guided through docs and instrumentation, then coordinated with ops to validate output.</p>
+
+  <h3>7. A project where you failed or underdelivered — what happened?</h3>
+  <p><strong>Neher Transit Bid:</strong> Built POC dashboard but client awarded contract to competitor with more hardware integrations. Used feedback to strengthen future bids and focus scope on software readiness and deployment playbooks.</p>
+
+  <h2>📌 Leadership & Philosophy</h2>
+  <ul>
+    <li><strong>Mentorship:</strong> Supported dozens of engineers through language migrations, platform upgrades, and architectural reviews.</li>
+    <li><strong>Org Design:</strong> Built and scaled teams from scratch at HERE and Uber, organizing by functional domain (backend, embedded, infra).</li>
+    <li><strong>Values:</strong> Pragmatic, low-ego, curious. Focused on unblocking teams, advocating for clarity, and mentoring with compassion.</li>
+    <li><strong>Learning:</strong> Passionate about Python, automation, and mapping. Regularly prototype with FastAPI, Streamlit, and emerging ML ops tools.</li>
+  </ul>
+
+  <h2>🎯 Meta-Specific Interests</h2>
+  <ul>
+    <li>Excited by Meta’s work on infrastructure at scale and commitment to open source (e.g., RocksDB, PyTorch).</li>
+    <li>Curious about Reality Labs and AR/VR infrastructure — especially real-world sensor alignment and mapping challenges.</li>
+    <li>Interested in opportunities to contribute to internal developer tooling or ML platform efforts where my systems background is useful.</li>
+  </ul>
+
+</body>
 </body>
 </html>
